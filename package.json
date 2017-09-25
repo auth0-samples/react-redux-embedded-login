@@ -1,0 +1,35 @@
+{
+  "name": "my-account-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/styleguide-components": "^2.0.3",
+    "@auth0/styleguide-core": "^2.0.6",
+    "@auth0/styleguide-react-components": "^1.0.2",
+    "atob": "^2.0.3",
+    "auth0-js": "^8.9.3",
+    "axios": "^0.16.1",
+    "bootstrap": "^3.3.7",
+    "email-validator": "^1.1.1",
+    "lodash": "^3.10.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.30.10",
+    "react-dom": "^15.6.1",
+    "react-redux": "4.3.0",
+    "react-router-dom": "^4.0.0",
+    "react-scripts": "1.0.13",
+    "react-toastr": "^2.9.3",
+    "redux": "^3.0.4",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^6.6.3",
+    "redux-thunk": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {}
+}

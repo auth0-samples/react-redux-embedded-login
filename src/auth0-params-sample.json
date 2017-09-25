@@ -1,0 +1,9 @@
+{
+  "domain": "myTenant.au.auth0.com",
+  "clientId": "myClientId",
+  "callbackUrl": "http://localhost:3000",
+  "realm": "myDB",
+  "apiUrl": "http://localhost:3001",
+  "apiAudience": "https://digitalapi",
+  "scope": "openid email update:email update:password"
+}
