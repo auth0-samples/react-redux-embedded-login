@@ -7,7 +7,7 @@
     "@auth0/styleguide-core": "^2.0.6",
     "@auth0/styleguide-react-components": "^1.0.2",
     "atob": "^2.0.3",
-    "auth0-js": "^8.9.3",
+    "auth0-js": "9.0.0-beta.5",
     "axios": "^0.16.1",
     "bootstrap": "^3.3.7",
     "email-validator": "^1.1.1",
