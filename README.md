@@ -1,29 +1,43 @@
-## Getting Started
+# React Redux Embedded Login
+
+Offers a comprehensive sample using modern react & redux libraries on how to achieve a custom UI embedded login.
 
 Supports username/password login, forgot password, and change password (authenticated).
 
-Copy auth0-params-sample.json as auth0-params.json and setup clientId, domain, callbackUrl and realm (database connection name).
+## Getting Started
 
-Make sure to add the callbackUrl to your Auth0 Client `allowed callback urls` list.
+Copy [auth0-params-sample.json](./src/auth0-params-sample.json) as `auth0-params.json` and setup `clientId`, `domain`, `callbackUrl` and `realm` (database connection name).
 
+Make sure to add the `callbackUrl` to your Auth0 Client `allowed callback urls` list.
+
+```json
+ "domain": "{{TENANT}}.auth0.com",
+ "clientId": "xxxxxx",
+ "callbackUrl": "http://localhost:3000",
+ "realm": "test"  // your database connection name
 ```
- domain: '{{TENANT}}.auth0.com',
- clientId: 'xxxxxx',
- callbackUrl: 'http://localhost:3000',
- realm: 'test'  // your database connection name
+
+```sh
+ npm install
+ npm start
 ```
 
- - npm install
- - npm start
+or:
 
- Optional: For authenticated change password, you will need to also install an API.
+```sh
+yarn install
+yarn start
+```
+
+> Optional: For authenticated change password, you will need to also install an API.
 
 This [api sample](https://github.com/auth0-samples/spring-boot-api-reference) can be used, and is designed for compatibility with this sample.
 
 ## How it looks
 
-![](storyboard.gif)
+![Storyboard](storyboard.gif)
 
+## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
