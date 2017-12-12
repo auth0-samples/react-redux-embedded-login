@@ -100,7 +100,7 @@ class ChangePassword extends Component {
           ref={(input) => { this.container = input; }}
           toastMessageFactory={ToastMessageFactory}
           className="toast-top-right"
-          preventDuplicates="false"
+          preventDuplicates={false}
         />
 
        </div>

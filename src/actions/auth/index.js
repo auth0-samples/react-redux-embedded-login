@@ -1,17 +1,12 @@
-import axios from "axios";
 import {
-  AUTH_USER,
-  AUTH_IN_PROGRESS,
-  UNAUTH_USER,
   AUTH_ERROR,
-  CLEARDOWN
-} from './authTypes';
+  AUTH_IN_PROGRESS,
+  AUTH_USER,
+  CLEARDOWN,
+  UNAUTH_USER,
+} from "./authTypes";
 
-import { getAccessToken } from '../../utils/utils';
-
-import params from './../../auth0-params.json';
-
-import Auth from './Auth';
+import Auth from "./Auth";
 
 const auth = new Auth();
 
@@ -54,13 +49,14 @@ export function cleardown() {
 }
 
 export function handleAuthentication(callback) {
-  return function (dispatch) {
-    auth.handleAuthentication()
+  return function(dispatch) {
+    auth
+      .handleAuthentication()
       .then(() => {
         return dispatch({ type: AUTH_USER });
       })
       .catch(err => {
         return dispatch({ type: UNAUTH_USER });
       });
-  }
+  };
 }

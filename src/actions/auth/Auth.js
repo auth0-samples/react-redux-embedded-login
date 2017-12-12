@@ -7,7 +7,6 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: params.domain,
     clientID: params.clientId,
-    // audience: `https://${params.domain}/userinfo`,
     audience: params.apiAudience,
     redirectUri: params.callbackUrl,
     scope: params.scope,
