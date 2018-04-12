@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { ToastContainer, ToastMessage } from 'react-toastr';
 import * as actions from '../../actions/password';
-import { Button } from '@auth0/styleguide-react-components';
 
 const ToastMessageFactory = React.createFactory(ToastMessage.animation);
 
@@ -56,7 +55,7 @@ class ChangePassword extends Component {
         </div>
       )
     }
-    return <Button type="submit" className="btn btn-success btn-sm">Submit</Button>;
+    return <button type="submit" className="btn btn-success btn-sm">Submit</button>;
   }
 
   getCancelButton() {
@@ -100,7 +99,7 @@ class ChangePassword extends Component {
           ref={(input) => { this.container = input; }}
           toastMessageFactory={ToastMessageFactory}
           className="toast-top-right"
-          preventDuplicates="false"
+          preventDuplicates={false}
         />
 
        </div>

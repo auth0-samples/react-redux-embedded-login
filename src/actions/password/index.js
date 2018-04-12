@@ -11,8 +11,7 @@ import {
 import { CHANGE_PASSWORD_SUCCESS } from '../home/homeTypes';
 
 import {
-  getAccessToken,
-  getClaimFromToken
+  getAccessToken
 } from '../../utils/utils';
 
 

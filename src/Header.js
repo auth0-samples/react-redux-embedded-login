@@ -27,7 +27,7 @@ class Header extends Component {
 
 
       <header className="site-header">
-      <nav className="navbar navbar-default" role="navigation">
+      <nav className="navbar navbar-default">
         <div className="container">
           <div className="navbar-header">
             <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span className="sr-only">Toggle navigation</span><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span>

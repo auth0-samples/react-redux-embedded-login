@@ -1,4 +1,3 @@
-import axios from "axios";
 import {
   AUTH_USER,
   AUTH_IN_PROGRESS,
@@ -6,10 +5,6 @@ import {
   AUTH_ERROR,
   CLEARDOWN
 } from './authTypes';
-
-import { getAccessToken } from '../../utils/utils';
-
-import params from './../../auth0-params.json';
 
 import Auth from './Auth';
 
